@@ -73,6 +73,7 @@ var guess;
         }
         else if (guess == 8) {
             alert('You guessed Correct!');
+            break;
         }
     }
     alert('Number of guesses expired. The secret number is ' + secretNumber) 
