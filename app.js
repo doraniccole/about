@@ -6,6 +6,7 @@ outdoorsQuestion()
 kidsQuestion()
 desertQuestion()
 singQuestion()
+teachQuestion()
 
 // Here is a string 
 //var name = 'How would you like to be addressed?'; 
@@ -56,15 +57,15 @@ function singQuestion() {
             alert('Incorrect.');
             }
 }
-var teach = 'Have you ever taught?';
-
-var teach = prompt('Have you ever taught?');
-     if (teach.toLowerCase() === 'yes') {
-            alert('Excellent. Correct.');
-  } else if (teach.toLowerCase() === 'no') {
-            alert('Try Again. Incorrect.');
-        }
-
+//var teach = 'Have you ever taught?';
+function teachQuestion() {
+    var teach = prompt('Have you ever taught?');
+        if (teach.toLowerCase() === 'yes') {
+                alert('Excellent. Correct.');
+    } else if (teach.toLowerCase() === 'no') {
+                alert('Try Again. Incorrect.');
+            }
+}
     
 var secretNumber = 8;
 var tries = 0;
