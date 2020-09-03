@@ -3,6 +3,7 @@
 console.log('js is loaded');
 giveName()
 outdoorsQuestion()
+kidsQuestion()
 // Here is a string 
 //var name = 'How would you like to be addressed?'; 
 
@@ -25,15 +26,15 @@ function outdoorsQuestion() {
         alert('Oops! Incorrect.');
             }
 }
-var kids = 'Do you have human children?';
-
-var kids = prompt('Do you have human children?');
-    if (kids.toLowerCase() === 'yes') {
-    alert('Absolutely. Correct.');
-} else if (kids.toLowerCase() === 'no') {
-    alert('Oops! Incorrect.');
-        }
-
+//var kids = 'Do you have human children?';
+function kidsQuestion() {
+    var kids = prompt('Do you have human children?');
+        if (kids.toLowerCase() === 'yes') {
+        alert('Absolutely. Correct.');
+    } else if (kids.toLowerCase() === 'no') {
+        alert('Oops! Incorrect.');
+            }
+}
 var desert = 'Have you been to the desert?';
 
 var desert = prompt('Have you been to the desert?');
