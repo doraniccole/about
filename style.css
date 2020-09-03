@@ -1,5 +1,5 @@
 #site-title {
-    color: #b4239c; font-size: 65px; font: bolder;
+    color: #b4239c; font-size: 65px; font: bolder; text-align: center; border: 10px;
 
 }
 body {
@@ -12,14 +12,14 @@ header {
 }
 
 main { 
-    height: 90%; color: #1a1815; border-width: 70px; text-align: left; font: bolder;
+    height: 90%; color: #1a1815; border-width: 70px; text-align: left; font: bolder; padding: 70px;
 }
 
 img {
-    border-radius: 50%;
+    border-radius: 40%; size: 15px; width: 350px; margin-right: 100px; margin-left: 100px;
 }
 footer {
-    height: 120px; font-style: italic; color: #b4239c; text-align: right;
+    height: 120px; font-style: italic; color: #b4239c; font: bolder; text-align: right; margin-right: 100px;
 }
 .WebContainer{
     width: 100%;
