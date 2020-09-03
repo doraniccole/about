@@ -1,12 +1,7 @@
 "use strict";
 
 console.log('js is loaded');
-giveName()
-outdoorsQuestion()
-kidsQuestion()
-desertQuestion()
-singQuestion()
-teachQuestion()
+
 
 // Here is a string 
 //var name = 'How would you like to be addressed?'; 
@@ -66,24 +61,36 @@ function teachQuestion() {
                 alert('Try Again. Incorrect.');
             }
 }
-    
-var secretNumber = 8;
-var tries = 0;
-var guess;
-    while (tries < 6) {
-        tries++
-        var guess = prompt('Guess a number between 1-10');
-        if (guess < 8) {
-            alert('too low');
-        } else if (guess > 8) {
-            alert('too high');
+function numberGame() {    
+    var secretNumber = 8;
+    var tries = 0;
+    //var guess;
+        while (tries < 6) {
+            tries++
+            var guess = prompt('Guess a number between 1-10');
+            if (parseInt(guess) < 8) {
+                alert('too low');
+            } else if (parseInt(guess) > 8) {
+                alert('too high');
+            }
+            else if (parseInt(guess) === 8) {
+                alert('You guessed Correct!');
+                break;
+            }
+              if (tries === 5 && parseInt(guess) !== 8) {
+                alert('Number of guesses expired. The secret number is ' + secretNumber)
+              }
         }
-        else if (guess == 8) {
-            alert('You guessed Correct!');
-            break;
-        }
-    }
-    alert('Number of guesses expired. The secret number is ' + secretNumber) 
+        
+}
+giveName()
+outdoorsQuestion()
+kidsQuestion()
+desertQuestion()
+singQuestion()
+teachQuestion()
+numberGame()
+     
 
 
 // crafted and brewed by dora with Jacob's Code 201 guidance
