@@ -4,6 +4,8 @@ console.log('js is loaded');
 giveName()
 outdoorsQuestion()
 kidsQuestion()
+desertQuestion()
+singQuestion()
 // Here is a string 
 //var name = 'How would you like to be addressed?'; 
 
@@ -35,24 +37,24 @@ function kidsQuestion() {
         alert('Oops! Incorrect.');
             }
 }
-var desert = 'Have you been to the desert?';
-
-var desert = prompt('Have you been to the desert?');
-    if (desert.toLowerCase() === 'yes') {
-        alert('Fantastic! Correct.');
- } else if (desert.toLowerCase() === 'no') {
-        alert('Darn. Incorrect.');
-        }
-
-var sing = 'Do you like to sing?';
-
-var sing = prompt('Do you like to sing?');
-    if (sing.toLowerCase() === 'yes') {
-        alert('Fabulous. Correct.'); 
- } else if (sing.toLowerCase() === 'no') {
-        alert('Incorrect.');
-        }
-
+//var desert = 'Have you been to the desert?';
+function desertQuestion() {
+    var desert = prompt('Have you been to the desert?');
+        if (desert.toLowerCase() === 'yes') {
+            alert('Fantastic! Correct.');
+    } else if (desert.toLowerCase() === 'no') {
+            alert('Darn. Incorrect.');
+            }
+}
+//var sing = 'Do you like to sing?';
+function singQuestion() {
+    var sing = prompt('Do you like to sing?');
+        if (sing.toLowerCase() === 'yes') {
+            alert('Fabulous. Correct.'); 
+    } else if (sing.toLowerCase() === 'no') {
+            alert('Incorrect.');
+            }
+}
 var teach = 'Have you ever taught?';
 
 var teach = prompt('Have you ever taught?');
