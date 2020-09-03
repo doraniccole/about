@@ -1,21 +1,22 @@
 "use strict";
 
 console.log('js is loaded');
-
+giveName()
 // Here is a string 
-var name = 'How would you like to be addressed?'; 
+//var name = 'How would you like to be addressed?'; 
 
 // getting input from a sign
-var name = prompt('How would you like to be addressed?');
-
-alert('Great meeting you, ' + name);
-console.log(name);
-console.log('Great meeting you, ' + name);
-
+function giveName() {
+  var name = prompt('How would you like to be addressed?');
+    alert('Great meeting you, ' + name);
+      console.log(name);
+      console.log('Great meeting you, ' + name);
+}
 // here is a string
-var outdoors = 'Have you been outdoors today?';
+//var outdoors = 'Have you been outdoors today?';
 
 // getting input
+
 var outdoors = prompt('Have you been outdoors today?');
     if (outdoors.toLowerCase() === 'yes') {
     alert('Great! Correct.');
