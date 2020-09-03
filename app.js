@@ -5,7 +5,7 @@ giveName()
 outdoorsQuestion()
 kidsQuestion()
 desertQuestion()
-singQuestion()
+
 // Here is a string 
 //var name = 'How would you like to be addressed?'; 
 
@@ -47,14 +47,14 @@ function desertQuestion() {
             }
 }
 //var sing = 'Do you like to sing?';
-function singQuestion() {
+
     var sing = prompt('Do you like to sing?');
         if (sing.toLowerCase() === 'yes') {
             alert('Fabulous. Correct.'); 
     } else if (sing.toLowerCase() === 'no') {
             alert('Incorrect.');
             }
-}
+
 var teach = 'Have you ever taught?';
 
 var teach = prompt('Have you ever taught?');
