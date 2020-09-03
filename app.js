@@ -2,6 +2,7 @@
 
 console.log('js is loaded');
 giveName()
+outdoorsQuestion()
 // Here is a string 
 //var name = 'How would you like to be addressed?'; 
 
@@ -16,14 +17,14 @@ function giveName() {
 //var outdoors = 'Have you been outdoors today?';
 
 // getting input
-
-var outdoors = prompt('Have you been outdoors today?');
-    if (outdoors.toLowerCase() === 'yes') {
-    alert('Great! Correct.');
-} else if (outdoors.toLowerCase() === 'no') {
-    alert('Oops! Incorrect.');
-        }
-
+function outdoorsQuestion() {
+    var outdoors = prompt('Have you been outdoors today?');
+        if (outdoors.toLowerCase() === 'yes') {
+        alert('Great! Correct.');
+    } else if (outdoors.toLowerCase() === 'no') {
+        alert('Oops! Incorrect.');
+            }
+}
 var kids = 'Do you have human children?';
 
 var kids = prompt('Do you have human children?');
