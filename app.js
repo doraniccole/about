@@ -11,7 +11,7 @@ alert('Great meeting you, ' + name);
 console.log(name);
 console.log('Great meeting you, ' + name);
 
-var outdoors = 'Have I been outdoors today?';
+
 var outdoors = prompt('Have I been outdoors today?');
     if (outdoors.toLowerCase() === 'yes') {
     alert('Great! Correct.');
@@ -20,29 +20,27 @@ var outdoors = prompt('Have I been outdoors today?');
 }
 
 
-var kids = 'Do I have human children?';
 var kids = prompt('Do I have human children?');
     if (kids.toLowerCase() === 'yes') {
     alert('Absolutely. Correct.');
 } else if (kids.toLowerCase() === 'no') {
     alert('Oops! Incorrect.');
-        }
+}
 
-var desert = 'Have I been to the desert?';
 var desert = prompt('Have I been to the desert?');
     if (desert.toLowerCase() === 'yes') {
         alert('Fantastic! Correct.');
 } else if (desert.toLowerCase() === 'no') {
         alert('Darn. Incorrect.');
-        }
+}
 
 var sing = 'Do I like to sing?';
 var sing = prompt('Do I like to sing?');
     if (sing.toLowerCase() === 'yes') {
         alert('Fabulous. Correct.'); 
-} else if (sing.toLowerCase() === 'no') {
+    } else if (sing.toLowerCase() === 'no') {
         alert('Incorrect.');
-        }
+    }
 
 var teach = 'Have I ever taught?';
 var teach = prompt('Have I ever taught?');
@@ -50,8 +48,7 @@ var teach = prompt('Have I ever taught?');
             alert('Excellent. Correct.');
 } else if (teach.toLowerCase() === 'no') {
             alert('Try Again. Incorrect.');
-        }
-score++
+}
     
 var secretNumber = 8;
 var tries = 0;
@@ -65,9 +62,11 @@ var tries = 0;
         } else if (guess == 8) {
             alert('You guessed Correct!');
             break;
+
         }
+        
     }
-    alert('Number of guesses expired. The secret number is ' + secretNumber) 
+     
 
     var guessHisName = ['My best friend from high school', 'His father', 'Spiderman', 'A mountain range', 'A natural disaster', 'My brother', 'His godfather']
     for (var i = 0; i < 6; i++) {
@@ -80,7 +79,7 @@ var tries = 0;
         }
     }
     alert('The correct answer is: Spiderman!')
-    score++;
+    //score++;
 
 //crafted and brewed by dora with Jacob's Code 201 guidance
 //codeproject.com credit to 'How to Adjust your WebSite to fit all types of Resolution'
