@@ -1,9 +1,9 @@
 #site-title {
-    color: #b4239c; font-size: 65px; font: bolder; text-align: center; border: 10px;
+    color: #b4239c; font-size: 80px; font: bolder; text-align: center; border: 10px; padding: 10px;
 
 }
 body {
-    background-color: #ebd5b5; height: auto; font-family: 'Architects Daughter';font-size: 20px; margin: 35px;
+    background-color: #ebd5b5; height: auto; font-family: 'Architects Daughter';font-size: 20px; margin: 35px; padding: 10%;
 
 }
 
@@ -12,7 +12,7 @@ header {
 }
 
 main { 
-    height: 90%; color: #1a1815; border-width: 70px; text-align: left; font: bolder; padding: 70px;
+    height: 90%; color: #1a1815; border-width: 0px; text-align: left; font: bolder; 
 }
 
 img {
