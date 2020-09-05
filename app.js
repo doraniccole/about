@@ -5,7 +5,7 @@ console.log('js is loaded');
 var name = 'What shall we call you?'; 
 var name = prompt('What shall we call you?');
 
-var score = 0;
+var score = [0];
 
 alert('Great meeting you, ' + name);
 console.log(name);
@@ -17,6 +17,7 @@ var outdoors = prompt('Have I been outdoors today?');
     alert('Great! Correct.');
 } else if (outdoors.toLowerCase() === 'no') {
     alert('Oops! Incorrect.');
+    score++
 }
 
 
@@ -25,6 +26,7 @@ var kids = prompt('Do I have human children?');
     alert('Absolutely. Correct.');
 } else if (kids.toLowerCase() === 'no') {
     alert('Oops! Incorrect.');
+    score++
 }
 
 var desert = prompt('Have I been to the desert?');
@@ -32,6 +34,7 @@ var desert = prompt('Have I been to the desert?');
         alert('Fantastic! Correct.');
 } else if (desert.toLowerCase() === 'no') {
         alert('Darn. Incorrect.');
+    score++
 }
 
 var sing = 'Do I like to sing?';
@@ -40,14 +43,16 @@ var sing = prompt('Do I like to sing?');
         alert('Fabulous. Correct.'); 
     } else if (sing.toLowerCase() === 'no') {
         alert('Incorrect.');
+    score++
     }
 
 var teach = 'Have I ever taught?';
 var teach = prompt('Have I ever taught?');
     if (teach.toLowerCase() === 'yes') {
-            alert('Excellent. Correct.');
+        alert('Excellent. Correct.');
 } else if (teach.toLowerCase() === 'no') {
-            alert('Try Again. Incorrect.');
+        alert('Try Again. Incorrect.');
+    score++
 }
     
 var secretNumber = 8;
@@ -64,22 +69,23 @@ var tries = 0;
             break;
 
         }
-        
+    score++
     }
+
      
 
-    var guessHisName = ['My best friend from high school', 'His father', 'Spiderman', 'A mountain range', 'A natural disaster', 'My brother', 'His godfather']
+var guessHisName = ['My best friend from high school', 'His father', 'Spiderman', 'A mountain range', 'A natural disaster', 'My brother', 'His godfather']
     for (var i = 0; i < 6; i++) {
         var answer = prompt('Who was my son named after? \nMy best friend from high school, \nHis father,\nSpiderman, \nA mountain range, \nA natural disaster, \nMy brother, \nHis godfather')
-        if (answer === guessHisName[2]) {
+        if (answer.toLowerCase() === guessHisName[2]) {
             alert('Super!');
             break;
         } else {
             alert('Your Spidey senses are off. Keep trying.');
         }
     }
-    alert('The correct answer is: Spiderman!')
-    //score++;
+        alert('The correct answer is: Spiderman!')
+    score++
 
 //crafted and brewed by dora with Jacob's Code 201 guidance
 //codeproject.com credit to 'How to Adjust your WebSite to fit all types of Resolution'
